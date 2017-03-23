@@ -11,7 +11,7 @@ module.exports = function(app) {
       email:body.email,
       password:body.password
     })
-    .then(user=>res.redirect('login.html'))
+    .then(user=>res.redirect('http://localhost:3000/login'))
     .catch(next);
   };
 };
